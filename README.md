@@ -1,6 +1,8 @@
-# Visual Blocks
+# Infographic Visual Blocks
 
 A reusable system for adding rich visual blocks — HTML infographics, charts, SVG illustrations, comparison tables, checklists, and callouts — to content-driven Next.js sites.
+
+Repository: https://github.com/doxaventures/infographic-visual-blocks
 
 ## Contents
 
