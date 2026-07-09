@@ -1,4 +1,8 @@
 import type { Block } from "../data/blocks";
+import { financeArticle } from "./article-finance";
+import { salesMarketingArticle } from "./article-sales-marketing";
+import { operationsArticle } from "./article-operations";
+import { adminSecurityArticle } from "./article-admin-security";
 
 export const sampleArticle = {
   title: "Sample article with visual blocks",
@@ -31,3 +35,12 @@ export const sampleArticle = {
     { type: "illustration", name: "audit-shield", caption: "Audit your stack to expose hidden overlaps." },
   ] satisfies Block[],
 };
+
+export const pillarArticles = [
+  financeArticle,
+  salesMarketingArticle,
+  operationsArticle,
+  adminSecurityArticle,
+] as const;
+
+export type PillarArticle = (typeof pillarArticles)[number];
